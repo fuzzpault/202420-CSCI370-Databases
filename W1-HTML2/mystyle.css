@@ -1,0 +1,16 @@
+a {
+	color: #ff0000;
+}
+
+p {
+	background-color: #0f0;
+}
+
+body{
+	background-color: #00f;
+	color: #fff;
+}
+
+.special {
+	opacity: 0.5;
+}
