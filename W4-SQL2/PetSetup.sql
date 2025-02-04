@@ -4,10 +4,10 @@ CREATE DATABASE Animals;
 USE Animals;
 
 CREATE TABLE Pets (
-    id INT PRIMARY KEY AUTO_INCREMENT, 
-    name VARCHAR(20),
-    type VARCHAR(20),
-    age FLOAT,
-    owner VARCHAR(20),
-    vaccinated TINYINT);
+    Id INT PRIMARY KEY AUTO_INCREMENT, 
+    Name VARCHAR(20),
+    Type VARCHAR(20),
+    Age FLOAT,
+    Owner VARCHAR(20),
+    Vacc TINYINT);
 
