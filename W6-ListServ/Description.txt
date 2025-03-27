@@ -1,0 +1,16 @@
+A user can visit a site and choose a list they'd like to subscribe to.  Such as "homework help","news","sports","coupons","food","animals","spam".  A user can put in their email address and subscribe to a list.  Unsubscribe should be possible.  Be able to print out the number of subscribers per list.  A user should be able to see what they've subscribed to.  An admin should be able to add a new list.
+
+List_name
+   * ID
+     Name
+
+User
+  * email
+
+List_n_user
+  * email_id
+  * list_id
+
+
+
+
