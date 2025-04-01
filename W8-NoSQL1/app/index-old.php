@@ -11,14 +11,14 @@
 
       $mem  = new Memcached();
       // List memcache servers
-      $mem->addServer('host.docker.internal',11211);
+      $mem->addServer('memcache',11211);
 
       if($mem->getVersion() === FALSE){
         echo "<h2>Memcache server connection error</h2>";
       }
 
       if(isset($_GET['key'])){
-        $mem->set($_GET['key'], $_GET['value'], $_GET['time']);
+        $mem->set($_GET['key'], $_GET['value'], (int)$_GET['time']);
       }
 
     if( $mem->add("mystr","this is a memcache test!",3600)){
