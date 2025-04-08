@@ -1,0 +1,13 @@
+services:
+  web:
+    image: fuzzpault/php-mysql-nosql-php
+    ports:
+      - "80:80"
+    volumes:
+      - ${PWD}/app:/app
+      - ${PWD}/mysql:/var/lib/mysql
+      - ${PWD}/logs:/var/log/apache2
+  memcache:
+    image: memcached:1.6.14
+    ports:
+      - "11211:11211"
